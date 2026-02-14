@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: beige;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.list_items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+.home_text{
+margin: 18% 0px 0px 18%;
+}
+#name{
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+#name_sub{
+    font-size: 20px;
+    margin-bottom: 8px;
+
+}
+#name_supersub{
+    line-height: 1.5;
+}
+.action{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#home{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#welcome_img{
+    width: 75%;
+}
+
+#about{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.about_head{
+     margin-bottom: 8px;
+     text-align: center;
+}
+.about_head p{
+    margin-bottom: 8px;
+}
+#about_sub{
+    padding: 40px 40px 80px 40px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+#skills h2{
+    text-align: center;
+}
+
+#skill_set{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: auto auto;
+    gap: 15%;
+    justify-content: center;
+}
+.fa-brands{
+    font-size: 100px;
+}
+.logo_text{
+text-align: center;}
+
+#contact_id{
+    padding: 150px 0px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#contact_head{
+     margin-bottom: 8px;
+     text-align: center;
+}
+#contact_text a{
+    text-decoration: none;
+    color: black;
+}
+
+#contact_text:hover .brand{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(45deg);
+    }
+    15%{
+        transform: rotate(90deg);
+    }30%{
+        transform: rotate(135deg);
+    }45%{
+        transform: rotate(180deg);
+    }60%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }90%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+footer{
+    padding: 60px;
+}
+#copyright{
+    text-align: center;
+}

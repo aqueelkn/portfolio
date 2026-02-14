@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gravitas+One&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <!-- animate style -->
+         <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- AOS animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+        <!-- navbar -->
+        <nav>
+            <!-- logo -->
+            <img class="logo" src="./images/logo.png" alt="MA logo">
+            <!-- navingation inside page -->
+            <ul>
+                <li class="list_items"><a class="links" href="#home">HOME</a></li>
+                <li class="list_items"><a class="links" href="#about">ABOUT</a></li>
+                <li class="list_items"><a class="links" href="#skills">SKILLS</a></li>
+                <li class="list_items"><a class="links" href="#contact_id">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- home -->
+        <section id="home">
+            <div class="home_text">
+                <h1 id="name">Hi, I am Mohammed Aqueel</h1>
+                <h4 id="name_sub"> Full Stack Developer in Training</h4>
+                <p id="name_supersub">Currently learning MEARN stack and building real projects.</p>
+                <a class="action" id="conatct_me" href="mailto:aqueelkn22@gmail.com">Contact Me</a>
+            </div>
+            <div class="home_img animate__animated animate__fadeInLeft">
+                <img id="welcome_img" src="./images/hi_img.png" alt="welcome">
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <div id="about_sub">
+                <h2 class="about_head">About Me</h2>
+                <p>I am Mohammed Aqueel, a passionate full stack developer in learning. <br>Currently building projects
+                    using MEARN stack.</p>
+                <p>I began my journey with HTML and moved into CSS.</p>
+                <br>
+                <p>My aim is to become a professional full stack developer and <br>contribute to real-world projects.
+                </p>
+                <br>
+                <div class="info_box">
+                    <div class="about_icons">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Mohammed Aqueel</span>
+                    </div>
+                    <div class="about_icons">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>aqueelkn22@gmail.com</span>
+                    </div>
+                </div>
+        </section>
+    <!-- skills -->
+     <section id="skills">
+        <h2>Skills</h2>
+        <div id="skill_set">
+            <div class="skill" id="html_skill" data-aos="flip-left" data-aos-duration="2000">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skills" id="css_skill" data-aos="flip-right" data-aos-duration="2000">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="logo_text">
+                <span>HTML-5</span>
+            </div>
+            <div class="logo_text">
+                <span>CSS</span>
+            </div>
+        </div>
+     </section>
+    <!-- contact -->
+     <section id="contact_id">
+        <h2 id="contact_head">My Contacts</h2>
+        <div id="contact_text">
+            <a href="mailto:aqueelkn22@gmail.com" target="_blank"><i class="fa-solid fa-envelope brand"></i> aqueelkn22@gmail.com</a>
+    
+        </div>     
+</section>
+    <!-- footer -->
+    <footer>
+        <p id="copyright">&copy;Jan 2026 Mohammed Aqueel. &reg; All Rights Reserved </p>
+    </footer>
+</body>
+<!-- AOS script -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+</html>
