@@ -24,22 +24,38 @@
   />
   <!-- AOS animation -->
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- box icons -->
+ <!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
         <!-- navbar -->
-        <nav>
+       <header id="header">
             <!-- logo -->
-            <img class="logo" src="./images/logo.png" alt="MA logo">
-            <!-- navingation inside page -->
-            <ul>
-                <li class="list_items"><a class="links" href="#home">HOME</a></li>
-                <li class="list_items"><a class="links" href="#about">ABOUT</a></li>
-                <li class="list_items"><a class="links" href="#skills">SKILLS</a></li>
-                <li class="list_items"><a class="links" href="#contact_id">CONTACT</a></li>
-            </ul>
-        </nav>
+                <img class="logo" src="./images/logo.png" alt="MA logo">
+                <!-- checkbox -->
+         <input type="checkbox" id="check">
+         <label for="check" class="icons">
+         <!-- menu icon -->
+          <i class="bx bx-menu" id="menuicon"></i>
+          <!-- close icon -->
+           <i class="bx bx-x" id="closeicon"></i>
+           </label>
+                <!-- navingation inside page -->
+                <nav class="navbar">
+                    <a class="links" href="#home">HOME</a>
+                    <a class="links" href="#about">ABOUT</a>
+                    <a class="links" href="#skills">SKILLS</a>
+                    <a class="links" href="#contact_id">CONTACT</a>
+            </nav>
+       </header>
         <!-- home -->
         <section id="home">
             <div class="home_text">

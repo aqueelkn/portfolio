@@ -8,22 +8,17 @@ body{
     background-color: beige;
 }
 
-nav{
+#header{
+
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 100px;
+    padding: 20px 5%;
 }
 
 .logo{
     width: 100px;
-}
-
-.list_items{
-    list-style: none;
-    display: inline;
-    margin: 0px 20px;
 }
 
 .links{
@@ -36,18 +31,31 @@ nav{
     text-decoration: underline;
     color: brown;
 }
+#check{
+    display: none;
+}
+.icons{
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
 
+.navbar a{
+    margin-left: 2.5rem;
+}
 .home_text{
-margin: 18% 0px 0px 18%;
+padding: 18% 0px 0px 18%;
 }
 #name{
     font-size: 30px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     font-family: "Playwrite NZ Basic", cursive;
 }
 #name_sub{
     font-size: 20px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 
 }
 #name_supersub{
@@ -156,4 +164,44 @@ footer{
 }
 #copyright{
     text-align: center;
+}
+
+@media (max-width:760px){
+    #header{
+        position: fixed;
+        top: 10px;
+    }
+    .home_img, .logo{
+        display: none;
+    }
+    .navbar a{
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.5rem 0px;
+}
+.icons{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~.icons #menuicon{
+        display: none;
+    }
+    #check:checked~.icons #closeicon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        background-color: rgba(165, 42, 42, 0.273);
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    
+}
+#check:checked~.navbar{
+    display: block;
 }
